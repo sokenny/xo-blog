@@ -13,6 +13,8 @@ type Blog = {
   thumbnail: string;
 };
 
+// Force rebuild
+
 const Home: NextPageAugmented<{ blogs: Blog[] }> = ({ blogs }) => {
   return (
     <div className={styles.container}>
