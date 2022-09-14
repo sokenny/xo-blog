@@ -13,7 +13,7 @@ type Blog = {
   thumbnail: string;
 };
 
-const Home: NextPageAugmented = ({ blogs }) => {
+const Home: NextPageAugmented<{ blogs: Blog[] }> = ({ blogs }) => {
   return (
     <div className={styles.container}>
       <Head>
