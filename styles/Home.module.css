@@ -1,9 +1,28 @@
+/* Import DomaineDispNar-Regular.woff from fonts, in multiple weights */
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('/fonts/DomaineDispNar-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Import DomaineDispNar-Bold.woff from fonts, in multiple weights */
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('/fonts/DomaineDispNar-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .container{
     background-color: white;
+    font-family: Domaine Display;
+    line-height: 1.35;
 }
 
 .main{
-    padding: 10vh 20vw;
+    padding: 10vh 15vw;
 }
 
 .identity{
@@ -14,6 +33,14 @@
     margin-bottom: 100px;   
     z-index: 1;
     color: black;
+}
+
+.logo{
+    margin-bottom: 12px;
+}
+
+.twitter{
+    opacity: .9;
 }
 
 .identity h1{
